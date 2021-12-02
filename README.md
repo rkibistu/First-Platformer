@@ -53,10 +53,11 @@
 	
 ## INTERACTIVE OBJECTS
 
-	### COINS
-		coins are
-	### TREASURE
-		treasurer is
+	**COINS**
+	dsadsa
+	
+	**TREASURES**
+	sdsad
 	
 	
 
