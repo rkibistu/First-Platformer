@@ -13,19 +13,50 @@
 			+ the levels are lock at start, you have to unlock them by playing
 			+ open ShoppingDaySettings/playerDetails, delete everything and write "6" to unlock all of them
 		- Quit (quit the game)
-		I set methods to be executed when buttons are pressed using OnClick() event from inspector.
-		Play and Quit call methods from the script MainMenu.cs. Select Level button disable MainMenu
+	I set methods to be executed when buttons are pressed using OnClick() event from inspector.
+	Play and Quit call methods from the script MainMenu.cs. Select Level button disable MainMenu
 	game object and enable SelectLevel game object and reveals a button for each level unlocked,
 	so the player can select the level to play.
-		Levels have to be unlocked. There is a file ShoppingDaySettings/playerDetails.txt which contains 
+	Levels have to be unlocked. There is a file ShoppingDaySettings/playerDetails.txt which contains 
 	a number that tell the last level unlocked. Every button from SelectLevel game object has the 
 	script LevelSelector.cs. This script sets the button active or inactive using the file mentioned
 	when the game starts (button index <= level in file -> active).
 	
 	
 ## WORLD CREATION
-	The worold
+	The game world(background, ground, decorations) has been created using 2D Tilemap Editor.
+	Every scene has a game object called Grid. This contains the tiles that build the world.
+	The tiles are divided into categories because every one needs specific setup:
+		- Ground - limits the movement of the player.
+			+ tiles from Ground are not interactive
+			+ physics don't affect them
+			+ rigidbody material has 0 friction so the player is not slowed down when jumping/falling 
+				while running into walls
+		- Platforms - tiles that permit partial movement through them
+			+ the build in component Platform Effector 2D is setup and allow oone way collisions
+			+ player can stand on the platforms and jumps through one from below, collisions are detected
+				only from above
+			+ a layer mask is set so the only gameobject which collide with platforms are tagged with
+				"Player" or "Enemy"
+			+ when the 'down arrow' key si pressed, the collisions mask is changed for a short
+				time. Collisions are not detected for game objects tagged "Player" -> player can fall 
+				through platform. The change is made using PlatformsReverseCollider.cs script which
+				detects input, change layer mask and keep a timer to go back to inital settings.
+		- Background 
+			+ contains diffrent game object. Each one has diffrent order in layer for correct rendering
+		- Decoratives - not interactive, just for design
+			+ these tiles have diffrent sizes so there are more tilemaps, each one with diffrent positions, 
+				taking care that the alingment with other tiles to be alright.
 	
+	I used animated tiles for waterfall and some candles. These are made using 2D Tilemap Extras package.
+	All animated tiles can be found in Assets\Prefabs\LevelDesign\AnimatedTiles.
+	
+## INTERACTIVE OBJECTS
+
+	### COINS
+		coins are
+	### TREASURE
+		treasurer is
 	
 	
 
