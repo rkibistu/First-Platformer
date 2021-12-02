@@ -53,11 +53,11 @@
 	
 ## INTERACTIVE OBJECTS
 
-	**COINS**
-	dsadsa
+**COINS**
+dsadsa
 	
-	**TREASURES**
-	sdsad
+**TREASURES**
+sdsad
 	
 	
 
