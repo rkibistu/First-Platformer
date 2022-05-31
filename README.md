@@ -55,12 +55,9 @@
 
 	COINS
 	
-	
+## Documentation should continue...
 	
 
- !!! IMPORTANT !!!
-To unlock all levels
-	-> Open ShoppingDaySettings/playerDetails, delete everything and write "6".
 	
 	
 	
