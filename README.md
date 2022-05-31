@@ -1,5 +1,6 @@
 
 # Shopping Day
+https://rkibistu.itch.io/shopping-day
 
 	Shopping Day is a 2D Platformer. 
 	The main character tries to find her wife who is gone shopping. But the way to shop is a bit 
