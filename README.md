@@ -88,14 +88,15 @@
 	
 	BUTTONS & DOORS
 	
+### Documentation should continue...
 	
-## ENEMIES
+### ENEMIES
 
-## BOSS FIGHT
+### BOSS FIGHT
 
-## LEVEL LOADER
+### LEVEL LOADER
 
-## PLAYER
+### PLAYER
 	
 
  !!! IMPORTANT !!!
