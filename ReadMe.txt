@@ -1,9 +1,9 @@
 
 # Shopping Day
 
-	Shopping Day is a 2D Platformer. 
-	The main character tries to find her wife who is gone to shopping. But the way to shop is a bit 
-	to long... And his wife is nowhere. Can you help him to find his wife?
+		Shopping Day is a 2D Platformer. 
+		The main character tries to find her wife who is gone to shopping. But the way to shop is a bit 
+		to long... And his wife is nowhere. Can you help him to find his wife?
 	
 ## START MENU
 	Canvas contains 2 GameObjects: MainMenu & SelectLevel.
